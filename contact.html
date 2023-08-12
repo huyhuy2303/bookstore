@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store Website</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <section>
+
+        <nav>
+
+            <a class="logo" href="index.html">
+                <img src="image/logo.jpg" alt="logo">
+            </a>
+
+            <ul>
+                <li><b><a href="index.html">HOME</a></b></li>
+                <li><b><a href="childrenbook.html">CHILDREN'S BOOKS</a></b></li>
+                <li><b><a href="fiction.html">FICTION</a></b></li>
+                <li><b><a href="nonfiction.html">NON-FICTION</a></b></li>
+                <li><b><a href="#ABOUTUS">ABOUT US</a></b></li>
+            </ul>
+
+            <div class="social_icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+    </section>
+
+    <!--CONTACT-->
+    <div class="contact-information">
+        <h3>contact us</h3>
+        <form action="" id="contact">
+            <div class="input-box contact-purpose">
+                <label for="purpose">Contact purpose:</label>
+                <select name="contact-purpose" id="purpose">
+                    <option value="sell">I want to sell books.</option>
+                    <option value="buy">I want to buy books.</option>
+                </select>
+            </div>
+
+            <div class="input-box name">
+                <label for="name">Name:</label>    
+                <input class="text-input" type="text" id="name" name="name" placeholder="Enter your name here">
+            </div>
+            
+            <div class="input-box email">
+                <label for="email">Email:</label>
+                <input class="text-input" type="email" id="email" name="email" placeholder="Enter your email here">
+            </div>
+
+
+            <div class="container">
+                <span>Contact preference:</span>
+                <div class="input-box contact-preference">
+                    <input class="select-input" type="checkbox" id="by-email" name="contact-by-email">
+                    <label for="by-email">By email</label>
+
+                    <input class="select-input" type="checkbox" id="by-phone">
+                    <label for="by-phone">By phone</label>
+                </div>
+            </div>
+
+            <div class="container">
+                <span>Receive weekly newspaper:</span>
+                <div class="input-box newspaper">
+                    <input class="select-input" type="radio" id="yes" name="weekly-news" checked="checked">
+                    <label for="yes">Yes</label>
+
+                    <input class="select-input" type="radio" id="no" name="weekly-news">
+                    <label for="no">No</label>
+                </div>
+            </div>
+
+            <div class="input-box extra-notes">
+                <label for="notes">Extra notes:</label>
+                <br>
+                <textarea class="text-input" id="notes" placeholder="Type here..."></textarea>
+            </div>
+            
+            <button type="submit" id="submit-button" formmethod="post"></button>
+            <label id="button" for="submit-button">
+                <span>Submit</span>
+                <div class="button-bg"></div>
+            </label>
+            
+            <button type="reset" id="reset-button"></button>
+            <label id="button" for="reset-button">
+                <span>Reset</span>
+                <div class="button-bg"></div>
+            </label>
+        </form>
+    </div>
+
+    <!--FOOTER-->
+    <div class="footer">
+        <img src="image/logo.jpg" alt="logo">
+        <b><a href="subp">About Us</a></b>
+        <b><a href="subp">Privacy Policy</a></b>
+        <b><a href="subp">Terms</a></b>
+        <b><a href="subp">Copyright</a></b>
+        <b><a href="contact.html">Contact Us</a></b>
+    </div>
+</body>
+</html>  

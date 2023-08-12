@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 10vh;
+    background-image: url(image/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #00BFFF;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+section nav .logo img{
+    width: 70px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+section nav li a{
+    text-decoration: none;
+    color: #000;
+}
+
+section nav li a:hover{
+    color: #00BFFF;
+    ;
+}
+
+section nav .social_icon i{
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+section nav .social_icon i:hover{
+    color: #00BFFF;
+    cursor: pointer;
+}
+
+/*Books*/
+
+.featured_boks{
+    width: 100%;
+    height: 80vh;
+    padding: 70px 0;
+}
+
+.featured_boks a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    font-size: 45px;
+}
+
+.featured_boks a{
+    text-decoration: none;
+    color: #000;
+}
+
+.featured_boks a:hover{
+    color: #00BFFF;
+    ;
+}
+
+.featured_boks .featured_book_box{
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.featured_boks .featured_book_box .featured_book_card{
+    width: 250px;
+    height: 420px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.featured_boks .featured_book_box .featured_book_card:hover{
+    box-shadow: 0 0 5px #00BFFF;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_img img{
+    width: 150px;
+    margin-top: 15px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag a{
+    font-size: 20px;
+    margin: 12px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .writer{
+    color: #919191;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .categories{
+    color: #00BFFF;
+    margin-top: 8px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price{
+    margin-top: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.featured_boks .featured_book_box .featured_book_card .featurde_book_tag .book_price sub{
+    font-weight: 100;
+    padding: 0 5px;
+}
+
+/*Footer*/
+
+.footer{
+    margin-top: 50px;
+    height: 100px;
+    width: 100%;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer a{
+    margin-top: -20px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.footer img{
+    height: 75px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+.footer a:hover{
+    color: #00BFFF;
+    ;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #00BFFF;
+    border-radius: 10px;
+}
+
+/* Small and mobile screens */
+@media screen and (max-width: 767px) {
+    section nav ul {
+      display: none;
+    }
+  
+    section nav .social_icon {
+      display: none;
+    }
+  
+    section nav .logo img {
+      width: 50px;
+      margin: 10px 0;
+    }
+  
+    .featured_boks a {
+      font-size: 30px;
+    }
+  
+    .featured_boks .featured_book_box {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .featured_boks .featured_book_box .featured_book_card {
+      width: 48%;
+      margin: 10px 1%;
+    }
+  }
+  
+  /* Medium and tablet screens */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    section nav li {
+      font-size: 16px;
+    }
+  
+    .featured_boks .featured_book_box {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .featured_boks .featured_book_box .featured_book_card {
+      width: 30%;
+      margin: 10px 1.5%;
+    }
+  }
+  
+

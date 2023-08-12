@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 10vh;
+    background-image: url(image/bg.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+section nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #00BFFF;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+section nav .logo img{
+    width: 70px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+section nav li a{
+    text-decoration: none;
+    color: #000;
+}
+
+section nav li a:hover{
+    color: #00BFFF;
+    ;
+}
+
+section nav .social_icon i{
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+section nav .social_icon i:hover{
+    color: #00BFFF;
+    cursor: pointer;
+}
+
+/*Contact*/
+.contact-information{
+    position: relative;
+    margin-top: 20px;
+    padding: 50px;
+    width: 55%;
+    left: 30%;
+}
+
+h3{
+    color: #00BFFF;
+    position: relative;
+    left: 50px;
+    text-transform: capitalize;
+    font-size: 45px;
+    text-shadow: 1px 3px 5px #c2c2c2;
+}
+
+form#contact{
+    position: relative;
+    width: 50%;
+    padding: 10px 30px 50px 30px;
+    background-color: #ffffff;
+}
+
+.container span{
+    font-size: 18px;
+}
+
+.input-box{
+    font-size: 18px;
+    padding: 20px 0px;
+    display: flex;
+}
+
+.text-input::placeholder{
+    color: #a9a9a9;
+}
+
+.text-input:hover::placeholder{
+    color: #575757;
+}
+
+.text-input:focus::placeholder{
+    color: transparent;
+}
+
+.contact-purpose select{
+    height: 25px;
+}
+
+.select-input + label{
+    font-style: italic;
+    font-size: 16px;
+}
+
+textarea.text-input{
+    height: 10em;
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.extra-notes label{
+    white-space: nowrap;;
+}
+
+form#contact button{
+    display: none;
+}
+
+form#contact label{
+    padding-right: 10px;
+}
+
+label#button{
+    position: relative;
+    margin-left: 30px;
+    padding: 0 !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+form#contact label span{
+    position: relative;
+    padding: 10px 25px;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#ffffff, #d0d0d0);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.button-bg{
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #868686;
+}
+
+form#contact label span:hover{
+    transform: translateY(-3px);
+}
+
+form#contact label span:active{
+    transform: translateY(2px);
+}
+
+/*Footer*/
+
+.footer{
+    margin-top: 30px;
+    height: 100px;
+    width: 100%;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer a{
+    margin-top: -20px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.footer img{
+    height: 75px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+.footer a:hover{
+    color: #00BFFF;
+    ;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #00BFFF;
+    border-radius: 10px;
+}
+
+/* Original styles */
+
+/* Header nav bar */
+@media screen and (max-width: 767px) {
+    section nav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: auto;
+      position: static;
+    }
+  
+    section nav .logo {
+      margin: 20px 0;
+    }
+  }
+  
+  /* Book detail page */
+  @media screen and (max-width: 767px) {
+    /* Adjust book images, price, and "Add to cart" button for mobile */
+    /* Add your specific styles here */
+  }
+  
+  /* Contact form */
+  @media screen and (max-width: 767px) {
+    .input-box {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+    }
+    
+    .input-box label {
+      margin-bottom: 5px;
+    }
+    
+    /* Add more specific styles for contact form layout on mobile */
+  }
+  
+  /* Footer */
+  @media screen and (max-width: 767px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+    }
+    
+    .footer img {
+      margin-bottom: 10px;
+    }
+    
+    .footer a {
+      margin-top: 5px;
+      font-size: 18px;
+    }
+  }
+
+/* Medium and tablet screens */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Header nav bar */
+    section nav li {
+      padding: 0 15px;
+      font-size: 18px;
+    }
+  
+    /* Book detail page */
+    /* Add your specific styles for tablet screens here */
+  
+    /* Contact form */
+    .input-box {
+      padding: 10px 0;
+    }
+    /* Add more specific styles for contact form layout on tablet screens here */
+  
+    /* Footer */
+    .footer a {
+      font-size: 16px;
+    }
+  }
+  
+  

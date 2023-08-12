@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 85vh;
+    background-image: url(image/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #00BFFF;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+section nav .logo img{
+    width: 70px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+section nav li a{
+    text-decoration: none;
+    color: #000;
+}
+
+section nav li a:hover{
+    color: #00BFFF;
+    ;
+}
+
+section nav .social_icon i{
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+section nav .social_icon i:hover{
+    color: #00BFFF;
+    cursor: pointer;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+
+section .main h1{
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 80px;
+}
+
+section .main h1 span{
+    color: #00BFFF;
+}
+
+section .main p{
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 25px;
+}
+
+section .main .main_img img{
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+
+/*arrivals*/
+
+.arrivals{
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 35px;
+    margin-top: 150px;
+}
+
+.arrivals a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 45px;
+}
+
+.arrivals a{
+    text-decoration: none;
+    color: #000;
+}
+
+.arrivals a:hover{
+    color: #00BFFF;
+    ;
+}
+
+.arrivals .arrivals_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+}
+
+.arrivals .arrivals_box .arrivals_card{
+    width: 250px;
+    height: 340px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover{
+    box-shadow: 0 0 5px #00BFFF;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag a{
+    font-size: 20px;
+    margin: 12px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image{
+    width: 150px;
+    height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover .arrivals_image img{
+    transform: scale(1.1);
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag p{
+    font-family: queen of camelot;
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_icon{
+    color: #000000;
+    margin-bottom: 18px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .arrivals_btn{
+    padding: 8px 20px;
+    border: 2px solid #00BFFF;
+    text-decoration: none;
+    color: #000;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .categories{
+    color: #00BFFF;
+    margin-bottom: 10px;
+}
+
+/*video*/
+.video{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 600px;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.video a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    font-size: 45px;
+}
+
+.video a{
+    text-decoration: none;
+    color: #000;
+}
+
+.video a:hover{
+    color: #00BFFF;
+    ;
+}
+
+.video iframe{
+    position: relative;
+    align-self: center;
+    top: 100px;
+    height: 70%;
+    width: 60%;
+}
+
+/*Footer*/
+
+.footer{
+    margin-top: 50px;
+    height: 100px;
+    width: 100%;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer a{
+    margin-top: -20px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.footer img{
+    height: 75px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+.footer a:hover{
+    color: #00BFFF;
+    ;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #00BFFF;
+    border-radius: 10px;
+}
+
+/* Small and mobile screens: width < 768px */
+@media screen and (max-width: 767px) {
+    section nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+    
+    section nav ul.active {
+        display: block;
+    }
+    
+    section nav li {
+        padding: 10px 0;
+    }
+    
+    section nav .social_icon i {
+        font-size: 16px;
+        margin: 0 3px;
+    }
+    
+    section .main h1 {
+        font-size: 35px;
+        top: 60px;
+        left: 20px;
+    }
+    
+    section .main p {
+        width: 90%;
+        top: 110px;
+        left: 5%;
+    }
+    
+    section .main .main_img img {
+        width: 90%;
+        top: 70px;
+        left: 5%;
+    }
+    
+    .arrivals .arrivals_box {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        margin: 0 auto;
+    }
+    
+    .arrivals .arrivals_card {
+        width: 45%;
+        height: auto;
+        margin: 20px auto;
+    }
+    
+    .arrivals .arrivals_box .arrivals_card .arrivals_tag a {
+        font-size: 18px;
+        margin: 8px;
+    }
+    
+    .video iframe {
+        top: 70px;
+        height: 300px;
+        width: 100%;
+    }
+}
+
+/* Medium and tablet screens: 768px ≤ width < 992px */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    section nav li {
+        padding: 5px 15px;
+    }
+    
+    section .main h1 {
+        font-size: 45px;
+        top: 70px;
+        left: 40px;
+    }
+    
+    section .main p {
+        width: 70%;
+        top: 110px;
+        left: 15%;
+    }
+    
+    section .main .main_img img {
+        width: 70%;
+        top: 60px;
+        left: 15%;
+    }
+    
+    .arrivals .arrivals_box {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 0 auto;
+    }
+    
+    .arrivals .arrivals_card {
+        width: 30%;
+        height: auto;
+        margin: 20px auto;
+    }
+    
+    .arrivals .arrivals_box .arrivals_card .arrivals_tag a {
+        font-size: 18px;
+        margin: 8px;
+    }
+    
+    .video iframe {
+        top: 70px;
+        height: 400px;
+        width: 80%;
+    }
+}
